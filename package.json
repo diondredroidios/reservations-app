@@ -1,0 +1,35 @@
+{
+  "name": "hotel",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "codegen": "apollo codegen:generate types.ts --queries='queries.ts' --addTypename --localSchemaFile ../gen/schema.graphql --target typescript --outputFlat"
+  },
+  "dependencies": {
+    "apollo-boost": "^0.3.1",
+    "graphql": "^14.2.1",
+    "react": "16.8.3",
+    "react-apollo": "^2.5.4",
+    "react-native": "0.59.4",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-navigation": "^3.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "@types/jest": "^24.0.11",
+    "@types/react": "^16.8.13",
+    "@types/react-native": "^0.57.42",
+    "@types/react-test-renderer": "^16.8.1",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "react-test-renderer": "16.8.3",
+    "typescript": "^3.4.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
